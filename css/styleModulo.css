@@ -1,0 +1,29 @@
+body {
+  background-color: #F2F2F2;
+}
+
+.input-group-addon>.material-icons {
+  font-size: 1.3rem;
+}
+
+.margin {
+  margin-bottom: 25px;
+}
+
+.inline {
+  width: 48% !important;
+  display: inline-block !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.ui-datepicker-calendar {
+  display: none;
+}

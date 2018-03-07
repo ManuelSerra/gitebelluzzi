@@ -1,0 +1,193 @@
+html,body{
+  background-image:url(http://www.freewindowswallpaper.com/images/large/00612.jpg);
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  background-color: #eee;
+  max-width: 65%;
+  min-width: 900px;
+  margin: 30px auto 0;
+  box-shadow: 0 0 20px;
+  height: 800px;
+}
+.left  { 
+  float:left; 
+  width: 30%;
+  background: white;
+  height: 800px;  
+}
+.right { 
+  float:right; 
+  width: 70%;
+  background: #eee;
+  height: 800px;  
+} 
+
+.header {
+  margin-top: 40px;
+  text-align: center;
+}
+.title {
+  color: grey;
+  font-size: 30px;
+}
+img{
+  border-radius: 100px 100px 100px 100px;
+}
+.about{
+  text-align: center;
+}
+.Disp{
+  background-color: green;
+  border-radius: 10%;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 5%;
+  font-family: courier;
+  color: white;
+}
+.dati{
+  
+  margin-right: 100px;
+}
+.info{
+	margin: 50px 0 0 50px;
+}
+.basic{
+	margin:40px 0 0 50px; 
+	font-family:Impact, Charcoal, sans-serif;
+}
+/* ____________________________________________________________________________________*/
+
+@media only screen and (max-width: 400px ){
+			div[class="container"]{
+				width: 100px !important;
+				min-width: 100%;
+				clear: both;
+				overflow-x: hidden;
+			}
+			div[class=container] .left{
+				float: left;
+				clear: both;
+				width: 400px !important;
+				max-width: 100% !important;
+				height: 600px;
+				
+				
+			}
+			div[class=container] .right{
+				float: left;
+				clear: both;
+				width: 400px !important;
+				max-width: 100% !important;
+				height: 100%;
+				
+			}
+			div[class=container] .dati{
+				float: left;
+				clear: both;
+				width: 400px !important;
+				max-width: 100% !important;
+				height: 100%;
+				margin: 0 auto;
+				
+			}
+			div[class=container] .info {
+				margin: 20px;
+			}
+			
+			div[class=container] #save {
+				margin: 20px !important;
+				overflow-x: hidden;
+			}
+			
+}
+
+
+/* ____________________________________________________________________________________*/
+#save {
+  float: right;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 0;
+  background: #51c1f0;
+  color: white;
+  transition: all 150ms ease;
+  cursor: pointer;
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.4);
+}
+#save:hover, #save:focus {
+  background: #22b0ec;
+  outline: 0;
+  box-shadow: 0 30px 30px -25px rgba(0, 0, 0, 1);
+  transform: translateY(3px);
+}
+#save:active {
+  background: #13a4e1;
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.4);
+  transform: translateY(5px);
+}
+#save:disabled {
+  cursor: auto;
+}
+#save:disabled:hover {
+  box-shadow: 0 30px 30px -20px rgba(0, 0, 0, 0.4);
+}
+#save.done {
+  background: #7dce94;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+#save .spinner {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  animation: loading 0.5s infinite linear;
+}
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+input[type=text],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

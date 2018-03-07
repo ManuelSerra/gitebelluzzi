@@ -1,0 +1,217 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto|Lato|Droid+Sans|Noto+Sans);
+html, * {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+/*
+#calendar {
+  transition: transform .2s;
+}
+
+#calendar:hover {
+  transform: scale(1.2);
+}
+
+#profile {
+  transition: transform .2s;
+}
+
+#profile:hover {
+  transform: scale(1.1);
+}
+
+#logout {
+  transition: transform .2s;
+}
+
+#logout:hover {
+  transform: scale(1.1);
+}
+
+#logo {
+  transition: transform .2s;
+}
+
+#logo:hover {
+  transform: scale(1.1);
+}
+*/
+
+header {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 65px;
+  line-height: 65px;
+}
+
+.row {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  line-height: 100%;
+}
+
+.container {
+  background: rgba(44, 62, 80, 1.0) !important;
+  margin: 0;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  line-height: 100%;
+}
+
+.col-4 {
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#logo {
+  max-width: 55px !important;
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+img {
+  max-width: 50px;
+}
+
+.classi {
+  width: 99%;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  margin-top: 16px;
+  max-width: 99%;
+  flex-wrap: wrap;
+}
+
+.classe {
+  margin: 10px;
+  position: relative;
+  border: transparent white;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 160px;
+  height: 100px;
+  min-width: 160px;
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  font-size: 40px;
+  margin: -25px 0 0 0;
+  text-align: center;
+}
+
+h6 {
+  position: absolute;
+  top: 77px;
+  left: 11px;
+  width: 100%;
+}
+
+#titolo {
+  margin: 0 auto !important;
+  font-size: 40px !important;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white !important;
+}
+
+.centro {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.icons {
+  margin-left: 1%;
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 755px) {
+  header[class=header] .container {
+    width: 100% !important;
+    height: 60px !important;
+    margin: 0 auto !important;
+  }
+  header[class=header] .row {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+  }
+  header[class=header] #titolo {
+    width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 1.9em !important;
+  }
+  div[class=row] .icons {
+    max-width: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header[class=header] .logo {
+    display: none !important;
+  }
+  div[class=row] .col-4 {
+    width: 50% !important;
+    max-width: 50% !important;
+    min-width: 50% !important;
+    height: 100% !important;
+  }
+  header[class=header] #titolo{
+    width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 1.7em !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  header[class=header] .container {
+    width: 100% !important;
+    height: 40px !important;
+    margin: 0 auto !important;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  header[class=header] .row {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+  }
+  header[class=header] #titolo{
+    font-size: 1.3em !important;
+  }
+  header[class=header] .icons {
+    max-width: 25px;
+  }
+}

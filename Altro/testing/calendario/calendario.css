@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto|Lato|Droid+Sans|Noto+Sans);
+.container {
+  width: 99%;
+	cursor: pointer;
+  height: 100%;
+  display: flex;
+  margin-top: 16px;
+	max-width: 99%;
+	flex-wrap: wrap;
+}
+
+.classe {
+	margin: 10px;
+  position: relative;
+  border: transparent white;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 160px;
+  height: 100px;
+	min-width: 160px;
+
+}
+
+h2 {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	font-size: 40px;
+	margin: -25px 0 0 0;
+	text-align: center;
+
+}
+
+h5 {
+  position: absolute;
+  top: 68px;
+  left: 5px;
+  width: 100%;
+}
+
+html, * {
+  font-family:"Times New Roman", Times, serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #0080FF;
+}
+
+#classes {
+    
+    max-width: 80px;
+    max-height: 60px;
+    transition: transform .2s; /* Animation */
+    
+   
+}
+
+#classes:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+
+}
+
+#profile {
+    
+    max-width: 55px;
+    max-height: 60px;
+    transition: transform .2s; /* Animation */
+}
+
+#profile:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+
+}
+
+#logout {
+    
+    max-width: 55px;
+    max-height: 60px;
+    transition: transform .2s; /* Animation */
+}
+
+#logout:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+
+}
+
+#home {
+    
+    max-width: 70px;
+    max-height: 60px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    transition: transform .2s; /* Animation */
+
+}
+
+#home:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    
+
+}
+
+
+
+
+ul.nav li a {
+  
+  font-size: 16px;
+  padding-bottom: 4px;
+  padding-top: 4px
+  
+}
+
+ul.nav li a:hover {
+  
+  background: transparent;
+  
+}
+
+
+
+.navbar-center {
+    
+    text-align: center;
+    margin-left: 35%;
+}
+
+#titolo {
+    margin-bottom: -1px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+    
+    height: 63px;
+}
+
+.calendar{
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 60%;
+	height: 450px;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: 2%;
+	top: 50%;
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.calendar h1, .calendar h2{
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 28px;
+	text-transform: uppercase;
+	margin: 0px 0px 20px 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar h1 span{
+	display: block;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar .col{
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.calendar .col .content{
+	padding: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar ul{
+	margin: 0px;
+}
+
+.calendar ul li{
+	list-style: none;
+}
+
+.calendar .leftCol{
+	width: 40%;
+	background-color: #0080FF;
+}
+
+.calendar .noteList li{
+	color: #ffffff;
+	margin-bottom: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar .notes p,
+.calendar .notes input,
+.calendar .noteList li{
+	font-weight: 300;
+	font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar .notes p{
+	border-bottom: solid 1px rgba(255,255,255,0.4);
+}
+
+.calendar .notes input{
+	background-color: #0080FF;
+	color: #ffffff;
+	border: none;
+	width: 200px;
+}
+
+.calendar .addNote,
+.calendar .removeNote{
+	float: right;
+	color: rgba(255,255,255,0.4);
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.calendar .addNote:hover,
+.calendar .removeNote:hover{
+	color: #ffffff;
+}
+
+.calendar .addNote{
+	font-size: 16px;
+}
+
+.calendar .leftCol h1{
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.calendar .rightCol{
+	width: 60%;
+}
+
+.calendar .rightCol h2{
+	color: #C7BEBE;
+	text-align: right;
+	margin-bottom: 70px;
+}
+
+.calendar .months li,
+.calendar .weekday li,
+.calendar .days li{
+	float: left;
+	text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar .months li a,
+.calendar .weekday li a,
+.calendar .days li a{
+	display: block;
+	color: #747978;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.calendar .months li a{
+	font-size: 10px;
+	color: #C7BEBE;
+	text-align: center;
+	width: 32px;
+	margin-bottom: 20px;
+}
+
+.calendar .months li .selected{
+	font-weight: bold;
+	color: #747978;
+}
+
+.calendar .weekday li a{
+	width: 55px;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 12px;
+}
+
+.calendar .days li{
+	width: 55px;
+}
+
+.calendar .days li a{
+	width: 36px;
+	height: 24px;
+	text-align: center;
+	margin: auto auto;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 12px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+
+.calendar .days li a:hover{
+	background-color: #EEEDE9;
+}
+
+.calendar .days li .selected{
+	background-color: #0080FF!important;
+	color: #ffffff;
+}
+
+.calendar .days li .event{
+	color: #0080FF;
+}
+
+input{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.body{
+    
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/* placeholder color */
+::-webkit-input-placeholder {color: #ffffff; }
+:-moz-placeholder {color: #ffffff; }
+::-moz-placeholder {color: #ffffff; }
+:-ms-input-placeholder {color: #ffffff; }

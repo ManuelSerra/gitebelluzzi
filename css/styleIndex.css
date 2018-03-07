@@ -1,0 +1,142 @@
+html, body {
+  color: white;
+  font-weight: 300;
+  overflow-x: hidden;
+  background: rgba(44, 62, 80,1.0) !important;
+}
+body ::-webkit-input-placeholder {
+  color: white;
+  font-weight: 300;
+}
+body :-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body ::-moz-placeholder {
+  color: white;
+  opacity: 1;
+  font-weight: 300;
+}
+body :-ms-input-placeholder {
+  color: white;
+  font-weight: 300;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 9%;
+  text-align: center;
+  background: rgba(44, 62, 80,1.0);
+  height: auto;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  width: 400px !important;
+  max-width: 450px !important;
+}
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  border: 1px solid #17a2b8 !important;
+  background-color: #17a2b8;
+  width: 250px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  font-weight: 300;
+}
+
+form input:hover {
+  background-color: #17a2b8;
+  color: inherit !important;
+}
+
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #fff;
+}
+.content {
+  width: 400px !important;
+  max-width: 400px !important;
+  margin: 0 auto;
+  text-align: center;
+}
+.btn {
+  width: 400px !important;
+}
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 755px) {
+  div[class=container] #invio {
+    margin: 0 auto !important;
+    width: 350px !important;
+    max-width: 350px !important;
+  }
+  div[class="container"] #username{
+    margin: 0 auto !important;
+    width: 350px !important;
+    max-width: 350px !important 
+  }
+  div[class="container"] #password{
+    margin: 0 auto !important;
+    width: 350px !important;
+    max-width: 350px !important;
+  }
+  div[class="container"] .logo{
+    margin: 0 auto !important;
+    width: 350px !important;
+    max-width: 350px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  div[class=container] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  div[class=container] form {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+  div[class=container] .content {
+    width: 300px !important;
+    max-width: 300px !important;
+    margin: 0 auto;
+  }
+  div[class=container] #invio {
+    margin: 0 auto !important;
+    width: 280px !important;
+    max-width: 280px !important;
+  }
+  div[class=container] #username{
+    margin: 0 auto !important;
+    width: 280px !important;
+    max-width: 280px !important 
+  }
+  div[class=container] #password{
+    margin: 0 auto !important;
+    width: 280px !important;
+    max-width: 280px !important;
+  }
+  div[class=container] .logo{
+    margin: 0 auto !important;
+    width: 280px !important;
+    max-width: 280px !important;
+  }
+}

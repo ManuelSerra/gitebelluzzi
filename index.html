@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>InterShips</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="frameworks/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="frameworks/Bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="frameworks/Bootstrap/bootstrap-reboot.css">
+	
+    <script src="frameworks/jQuery/jquery.js"></script>
+    <script src="frameworks/Bootstrap/bootstrap.js"></script>
+    <script src="frameworks/Bootstrap/bootstrap.bundle.js"></script>
+    <script>
+      console.log("fagtetagpo55");
+    </script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <div  class="alert alert-danger" id="loginError"><strong>Attenzione:</strong> per poter proseguire è necessario effettuare il login</div>
+      <img src="img/logo.png" class="logo">
+      <div class="content">
+        <form name="form1" method="post" action="backend/index.php">
+          <div class="input-group mb-3">
+            <input type="text" id="username" class="form-control" placeholder="Username" aria-label="Username" name="username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="password" id="password" class="form-control" placeholder="Password" aria-label="Password" name="password" aria-describedby="basic-addon1">
+          </div>
+          <input class="btn btn-outline-info" id="invio" type="submit" name="submit" value="Invio">
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/jsIndex.js"></script>
+
+</html>

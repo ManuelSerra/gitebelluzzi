@@ -1,0 +1,5 @@
+- Inserire l'sql nel database (attivare innoDB per far andare le fk)
+
+- Creare qualche finto prof per attivare meccanismo di login (password criptata nel db)
+
+- Preparare una select per le card delle classi di ogni prof.

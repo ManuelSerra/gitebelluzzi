@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Le mie classi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='frameworks/GoogleFont/FontGoogleApi.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="frameworks/Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="frameworks/Bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/styleProfile.css">
+    
+   
+    <script src="frameworks/jQuery/jquery.js"></script>
+    
+
+  </head>
+
+<body>
+<div id="wrapper"></div>
+  <div class="container">
+    <div class="left">
+      <div class="header">
+        <h1 id="profileCode"> PROFILO </h1>
+        <img src="https://pbs.twimg.com/profile_images/949287080231952384/8ztpArYE_200x200.jpg" alt="" />
+      </div>
+      <div class="about">
+        <h1 id ="profileName">Nome Cognome</h1>
+        <h3 class="Disp">Disponibilità gita</h3>
+        <form action="backend/profile.php" method="post">
+          <input onchange="this.form.submit();" type="checkbox" id="isDisponibile" name="isDisponibile"/> Disponibile
+          <input type="hidden" name="action" value="cambioDisponibilità">
+        </form>
+      </div>
+    </div>
+    <div class="right">
+      <h1 class="basic">BASIC INFO</h1>
+      <h3 class="info">
+        <div class = "dati">
+		  <label>Nome:</label>
+		  <h3 id="name"></h3>
+		  <label>Cognome:</label>
+		  <h3 id="surname"></h3>
+		  <label>Classe di coordinazione:</label>
+		  <h3 id="class"></h3>
+		  <label>Cambia Password:</label>
+		  <form action="backend/profile.php" method="post">
+			<input type="password" placeholder="Password" name="password" id="password" required>
+			<input type="password" placeholder="Confirm Password" name="confirm_password" id="confirm_password" required>
+			<input type="hidden" name="action" value="cambioPassword">
+			<input type="checkbox" onclick="myFunction()">Mostra Password</input>
+			<input id="save" type="submit" name="submit" value="Save">
+		  </form>
+		</div>
+	  </h3>
+    </div>
+  </div>
+</body>
+</html>
