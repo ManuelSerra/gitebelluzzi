@@ -1,8 +1,8 @@
 <?php
-	$servername = "localhost";
-	$username = "gitebelluzzi";
-	$password = "fagtetagpo55";
-	$db = "my_gitebelluzzi";
+	$servername = "82.52.20.12";
+	$username = "root";
+	$password = "";
+	$db = "gitebelluzzi";
 	// Create connection
 	$conn = mysqli_connect($servername, $username, $password, $db);
     $msg = "connessione non stabilita";
